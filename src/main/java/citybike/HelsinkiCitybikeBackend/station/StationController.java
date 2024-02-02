@@ -32,7 +32,11 @@ public class StationController {
 		return "This is a test.";
 	}
 	
-
+	
+    @RequestMapping("/")
+    public String index() {
+        return "index";
+    }
 
 // REST -----------------------------------------------------------------------------
 
