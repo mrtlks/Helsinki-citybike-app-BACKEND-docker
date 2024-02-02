@@ -74,20 +74,7 @@ table {
 
 <body>
 
-	<nav th:fragment="navbar"
-		class="navbar navbar-expand-md bg-dark navbar-dark fs pt-2">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" th:href="@{/stations}">Helsinki City
-					Bike Backend with UI for adding Stations and Journeys</a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li><h3><a class="nav-link" th:href="@{/stations}">Stations</a><h3></li>
-
-				<li><h3><a class="nav-link" th:href="@{/journeys}">Journeys</a></h3></li>
-			</ul>
-		</div>
-	</nav>
+<div th:insert="navbar :: navbar">  </div>
 
 	<section class="jumbotron">
 		<div class="container">
