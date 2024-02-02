@@ -35,7 +35,7 @@ public class StationController {
 	
     @RequestMapping("/")
     public String index() {
-        return "index";
+        return "stationspage";
     }
 
 // REST -----------------------------------------------------------------------------
