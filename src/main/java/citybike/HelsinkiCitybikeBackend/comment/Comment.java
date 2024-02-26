@@ -2,9 +2,6 @@ package citybike.HelsinkiCitybikeBackend.comment;
 
 
 
-
-import org.springframework.web.bind.annotation.CrossOrigin;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -30,6 +27,7 @@ public class Comment {
 		super();
 		this.comment_text = comment_text;
 		this.nickname = nickname;
+		this.stars = stars;
 	}
 
 	public void setComment_id(int comment_id) {

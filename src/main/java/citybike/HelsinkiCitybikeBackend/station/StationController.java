@@ -25,7 +25,7 @@ public class StationController {
 	@Autowired
 	private StationRepository stationRepository;
 	
-//mock test (TestingWebApplivationTest)
+//mock test (WebLayerTest)
 	
 	@RequestMapping("/test")
 	public @ResponseBody String greeting() {

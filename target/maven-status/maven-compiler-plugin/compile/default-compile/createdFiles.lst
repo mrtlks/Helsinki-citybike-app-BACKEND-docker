@@ -1,0 +1,12 @@
+citybike\HelsinkiCitybikeBackend\journey\Journey.class
+citybike\HelsinkiCitybikeBackend\comment\Comment.class
+citybike\HelsinkiCitybikeBackend\journey\JourneyController.class
+citybike\HelsinkiCitybikeBackend\station\StationRepository.class
+citybike\HelsinkiCitybikeBackend\journey\JourneySortingController.class
+citybike\HelsinkiCitybikeBackend\station\Station.class
+citybike\HelsinkiCitybikeBackend\journey\JourneyRepository.class
+citybike\HelsinkiCitybikeBackend\station\StationController.class
+citybike\HelsinkiCitybikeBackend\station\StationSortingController.class
+citybike\HelsinkiCitybikeBackend\comment\CommentRepository.class
+citybike\HelsinkiCitybikeBackend\comment\CommentController.class
+citybike\HelsinkiCitybikeBackend\HelsinkiCitybikeBackendApplication.class

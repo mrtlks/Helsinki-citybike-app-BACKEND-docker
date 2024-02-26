@@ -38,9 +38,6 @@ public interface StationRepository extends PagingAndSortingRepository<Station, I
 	Station findByName(String departureStationName);
 
 	
-
-	
-
 	
 
 }

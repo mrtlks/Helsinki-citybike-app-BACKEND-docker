@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.6</version>
+		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>citybike</groupId>
@@ -62,7 +62,15 @@
 			<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>		
+		</dependency>	
+			
+		<dependency>
+    <groupId>org.hamcrest</groupId>
+    <artifactId>hamcrest</artifactId>
+   
+    <scope>test</scope>
+</dependency>
+		
 		
 	</dependencies>
 
@@ -73,6 +81,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			<configuration>
+                <outputDirectory>${project.build.directory}</outputDirectory>
+            </configuration>
 			</plugin>
 		</plugins>
 	</build>
