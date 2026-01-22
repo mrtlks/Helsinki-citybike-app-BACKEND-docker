@@ -1,18 +1,23 @@
-@Configuration
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+package citybike.HelsinkiCitybikeBackend;
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+public class SecurityConfig {
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .csrf().disable()
-            .authorizeRequests()
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/api/**").permitAll() // frontend avoin
+                .anyRequest().authenticated()           // kaikki muu vaatii kirjautumisen
+            )
+            .httpBasic(); // Basic Auth
 
-                // Frontendin API-pyynnöt avoimia
-                .antMatchers("/api/**").permitAll()
-
-                // Kaikki muu vaatii salasanan
-                .anyRequest().authenticated()
-            .and()
-            .httpBasic(); // Basic Auth salasanalle
+        return http.build();
     }
 }
